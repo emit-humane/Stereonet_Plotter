@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stereonet Plotter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Stereonet Plotter</h1>
+        <div class="container">
+            <!-- Left Section for Stereonet Plot -->
+            <div class="stereonet-section">
+                <img id="stereonetImage" src="" alt="Stereonet Plot" class="plot-image">
+            </div>
+            <!-- Right Section for Inputs and Controls -->
+            <div class="controls-section">
+                <select id="plotType">
+                    <option value="line">Line</option>
+                    <option value="plane">Plane</option>
+                </select>
+                <div id="lineInputs">
+                    <input type="number" id="trend" placeholder="Trend">
+                    <input type="number" id="plunge" placeholder="Plunge">
+                </div>
+                <div id="planeInputs" style="display: none;">
+                    <input type="number" id="strike" placeholder="Strike" oninput="updateDipDirection()">
+                    <input type="number" id="dipDirection" placeholder="Dip Direction" oninput="updateStrikeDirection()">
+                    <input type="number" id="dipAngle" placeholder="Dip Angle">
+                </div>
+                <button id="addPlot">Add to Plot</button>
+                <!-- Export Dropdown and Button -->
+                <h2>Export Plot</h2>
+                <select id="exportFormat">
+                    <option value="png">PNG</option>
+                    <option value="pdf">PDF</option>
+                    <option value="svg">SVG</option>
+                </select>
+                <button onclick="exportSelectedFormat()">Download</button>
+                <h2>Current Plots</h2>
+                <table border="1" id="plotTable">
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Data</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dynamic content will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
