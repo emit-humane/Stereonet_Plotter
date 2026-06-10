@@ -73,4 +73,4 @@ http://127.0.0.1:5000
 ## Notes
 
 - Plot data is stored in the Flask session while using the app.
-- The app currently runs with `debug=True` in `app.py`.
+- The app currently runs with `debug=True` in `app.py`; use `debug=False` for production deployments.
