@@ -51,7 +51,9 @@ python app.py
 
 Then open:
 
-`http://127.0.0.1:5000`
+```text
+http://127.0.0.1:5000
+```
 
 ## How to Use
 
@@ -64,7 +66,7 @@ Then open:
 
 ## Export Formats
 
-- PNG (downloaded from base64-encoded image data)
+- PNG
 - PDF
 - SVG
 
