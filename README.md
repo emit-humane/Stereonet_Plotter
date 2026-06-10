@@ -20,11 +20,11 @@ Stereonet Plotter is a small Flask web app for plotting geological lines and pla
 
 ## Project Structure
 
-- `/home/runner/work/Stereonet_Plotter/Stereonet_Plotter/emit-humane/Stereonet_Plotter/app.py` – Flask app and routes
-- `/home/runner/work/Stereonet_Plotter/Stereonet_Plotter/emit-humane/Stereonet_Plotter/stereonet_calculations.py` – stereonet plotting logic
-- `/home/runner/work/Stereonet_Plotter/Stereonet_Plotter/emit-humane/Stereonet_Plotter/templates/index.html` – main UI template
-- `/home/runner/work/Stereonet_Plotter/Stereonet_Plotter/emit-humane/Stereonet_Plotter/static/css/styles.css` – styles
-- `/home/runner/work/Stereonet_Plotter/Stereonet_Plotter/emit-humane/Stereonet_Plotter/static/js/script.js` – client-side logic
+- `app.py` – Flask app and routes
+- `stereonet_calculations.py` – stereonet plotting logic
+- `templates/index.html` – main UI template
+- `static/css/styles.css` – styles
+- `static/js/script.js` – client-side logic
 
 ## Setup
 
