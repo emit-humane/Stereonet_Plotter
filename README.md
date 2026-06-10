@@ -20,11 +20,11 @@ Stereonet Plotter is a small Flask web app for plotting geological lines and pla
 
 ## Project Structure
 
-- `app.py` – Flask app and routes
-- `stereonet_calculations.py` – stereonet plotting logic
-- `templates/index.html` – main UI template
-- `static/css/styles.css` – styles
-- `static/js/script.js` – client-side logic
+- `./app.py` – Flask app and routes
+- `./stereonet_calculations.py` – stereonet plotting logic
+- `./templates/index.html` – main UI template
+- `./static/css/styles.css` – styles
+- `./static/js/script.js` – client-side logic
 
 ## Setup
 
